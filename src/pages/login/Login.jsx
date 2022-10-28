@@ -1,12 +1,12 @@
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 
 
 const Login = () => {
   const navigate=useNavigate();
 
 const buttonClick=()=>{
-  navigate("/home")
+  navigate("/")
 }
 
   return (
