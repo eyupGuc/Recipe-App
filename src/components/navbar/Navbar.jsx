@@ -18,6 +18,12 @@ const NavBar = () => {
           ABOUT
         </NavLink>
 
+        <a  href="https://github.com/eyupGuc" className="nav-link active p-3" aria-current="page">
+          GİTHUB
+        </a>
+        <NavLink to="/" className="nav-link active p-3" aria-current="page">
+          LOGOUT
+        </NavLink>
       </div>
     </div>
   );
