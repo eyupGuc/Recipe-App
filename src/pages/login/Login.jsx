@@ -1,18 +1,12 @@
-
 import { useNavigate } from "react-router-dom";
 
-
 const Login = () => {
-  const navigate=useNavigate();
-
-const buttonClick=()=>{
-  navigate("/home")
-}
+  const navigate = useNavigate();
 
   return (
     <div className="container border border-3 mt-5 w-75 bg-info">
       <h1 className="text-center mt-4">LOGİN</h1>
-      <form>
+      <form onSubmit={() => navigate("home")}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username
@@ -23,7 +17,7 @@ const buttonClick=()=>{
             className="form-control"
             id="username"
             placeholder="Enter your username"
-          
+            required
           />
         </div>
 
@@ -37,19 +31,13 @@ const buttonClick=()=>{
             className="form-control"
             id="password"
             placeholder="Enter your password"
-         
+            required
           />
         </div>
         <div className="text-center">
-          <button
-            onClick={buttonClick}
-            className="btn btn-success mb-4"
-          >
-            Login
-          </button>
+          <button className="btn btn-success mb-4">Login</button>
         </div>
       </form>
-     
     </div>
   );
 };
