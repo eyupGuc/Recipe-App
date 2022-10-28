@@ -1,6 +1,14 @@
-import { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
+  const navigate=useNavigate();
+
+const buttonClick=()=>{
+  navigate("/home")
+}
+
   return (
     <div className="container border border-3 mt-5 w-75 bg-info">
       <h1 className="text-center mt-4">LOGİN</h1>
@@ -15,7 +23,7 @@ const Login = () => {
             className="form-control"
             id="username"
             placeholder="Enter your username"
-            required
+          
           />
         </div>
 
@@ -29,19 +37,19 @@ const Login = () => {
             className="form-control"
             id="password"
             placeholder="Enter your password"
-            required
+         
           />
         </div>
         <div className="text-center">
           <button
-            onClick={() => console.log("click")}
+            onClick={buttonClick}
             className="btn btn-success mb-4"
           >
             Login
           </button>
         </div>
       </form>
-      <Home/>
+     
     </div>
   );
 };
