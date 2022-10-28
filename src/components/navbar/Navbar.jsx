@@ -3,23 +3,23 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <>
+    <div className="mt-4 bg-info d-flex  ">
       <div>
         <img style={{ width: "200px" }} src={recipe} alt="recipe" />{" "}
       </div>
-      <div>
-        <NavLink to="/" className="nav-link active" aria-current="page">
+      <div >
+        <NavLink to="/" className="nav-link active p-3" aria-current="page">
           HOME
         </NavLink>
       </div>
       <div>
         {" "}
-        <NavLink to="/about" className="nav-link active" aria-current="page">
+        <NavLink to="/about" className="nav-link active p-3" aria-current="page">
           ABOUT
         </NavLink>
-        
+
       </div>
-    </>
+    </div>
   );
 };
 export default NavBar;
