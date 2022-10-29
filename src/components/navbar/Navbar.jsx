@@ -7,20 +7,31 @@ const NavBar = () => {
       <div>
         <img style={{ width: "200px" }} src={recipe} alt="recipe" />{" "}
       </div>
-      <div >
+      <div>
         <NavLink to="/" className="nav-link active p-3" aria-current="page">
           HOME
         </NavLink>
       </div>
       <div>
         {" "}
-        <NavLink to="/about" className="nav-link active p-3" aria-current="page">
+        <NavLink
+          to="/about"
+          className="nav-link active p-3"
+          aria-current="page"
+        >
           ABOUT
         </NavLink>
-
-        <a  href="https://github.com/eyupGuc" className="nav-link active p-3" aria-current="page">
+      </div>
+      <div>
+        <a
+          href="https://github.com/eyupGuc"
+          className="nav-link active p-3"
+          aria-current="page"
+        >
           GİTHUB
         </a>
+      </div>
+      <div>
         <NavLink to="/" className="nav-link active p-3" aria-current="page">
           LOGOUT
         </NavLink>

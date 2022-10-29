@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="container border border-3 mt-5 w-75 bg-info">
       <h1 className="text-center mt-4">LOGİN</h1>
-      <form onSubmit={() => navigate("home")}>
+      <form onSubmit={() => navigate("/")}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username
