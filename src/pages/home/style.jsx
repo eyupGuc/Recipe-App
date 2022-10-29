@@ -4,7 +4,7 @@ export const Button = styled.button`
   background-color: green;
   color: white;
   cursor: pointer;
-  margin-left: 1rem;
+margin-top: 0.5rem;
   border-radius: 0.5rem;
   border-color: black;
   &:hover {
@@ -14,19 +14,20 @@ export const Button = styled.button`
 
 export const HomeStyle = styled.div`
  
- max-height: 100%;
+ height: 100%;
   background-color: tomato;
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2.5rem;
+  padding-top: 0.5rem;
   font-size: 1rem;
   padding: 2rem 0;
+  flex-wrap: wrap;
 `;
 
 export const CardDiv = styled.div`
-  width: 30rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 2rem;
   padding: 1.5rem;
   text-align: center;
@@ -37,6 +38,9 @@ export const CardDiv = styled.div`
   border: 2px solid black;
   margin-bottom: 2rem;
   background-color: crimson;
+  position: relative;
+  flex-direction: column;
+  
 `;
 export const CardImage = styled.img`
   width:200px;
@@ -73,7 +77,7 @@ border-radius: 0.7rem;
 border: none;
 font-size: 1.2rem;
 padding-left: 1rem;
-margin-right:1rem;
+
 margin-right: 0.5rem;
 
 background-color: green;

@@ -1,11 +1,12 @@
 import recipe from "../../assets/recipes.png";
 import { NavLink } from "react-router-dom";
+import { NavbarDiv } from "./NavBar.styled";
 
 const NavBar = () => {
   return (
-    <div className="mt-4 bg-info d-flex  ">
+    <NavbarDiv>
       <div>
-        <img style={{ width: "200px" }} src={recipe} alt="recipe" />{" "}
+        <img style={{ width: "150px" }} src={recipe} alt="recipe" />{" "}
       </div>
       <div>
         <NavLink to="/" className="nav-link active p-3" aria-current="page">
@@ -37,7 +38,7 @@ const NavBar = () => {
           LOGOUT
         </NavLink>
       </div>
-    </div>
+    </NavbarDiv>
   );
 };
 export default NavBar;
