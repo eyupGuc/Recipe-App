@@ -7,6 +7,7 @@ const Home = () => {
   const [recipes, setRecipes] = useState([]);
   const [meal, setMeal] = useState("");
   const [time, setTime] = useState("Dinner");
+  let getData=false
 
   //   const [time, setTime] = useState("time");
   const getRecipes = async () => {
@@ -19,7 +20,8 @@ const Home = () => {
   };
 
   const handleClick = () => {
-    getRecipes();
+    meal && getRecipes();
+    
     console.log(meal);
     console.log(time);
     setMeal("");
