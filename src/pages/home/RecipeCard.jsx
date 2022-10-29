@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Button } from "./style";
 
 const RecipeCard = ({ recipes }) => {
   const navigate = useNavigate();
