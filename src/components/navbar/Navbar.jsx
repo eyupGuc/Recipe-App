@@ -27,6 +27,7 @@ const NavBar = () => {
           href="https://github.com/eyupGuc"
           className="nav-link active p-3"
           aria-current="page"
+          target="_blank"
         >
           GİTHUB
         </a>
