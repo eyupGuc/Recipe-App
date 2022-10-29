@@ -9,16 +9,15 @@ const RecipeCard = ({ recipes }) => {
     <div className=" mt-4  ">
       {recipes.map((item, index) => {
         return (
-          <CardDiv key={index} >
+          <CardDiv key={index}>
             <CardHeader>{item?.recipe?.label}</CardHeader>
-            <CardImage style={{ width: "300px" }} src={item?.recipe?.image} alt="" />
+            <CardImage src={item?.recipe?.image} alt="" />
             <Button
               onClick={() => {
                 navigate(`/details`, { state: item });
               }}
-              className="btn btn-success"
             >
-              more
+             View More
             </Button>
           </CardDiv>
         );
