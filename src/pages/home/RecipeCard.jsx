@@ -13,7 +13,7 @@ const RecipeCard = ({ recipes }) => {
             <img style={{ width: "300px" }} src={item?.recipe?.image} alt="" />
             <button
               onClick={() => {
-              return  navigate("/details"), { state: item };
+                navigate(`/details`, { state: item });
               }}
               className="btn btn-success"
             >
