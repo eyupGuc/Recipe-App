@@ -9,4 +9,5 @@ export const NavbarDiv = styled.div`
   padding-top: 0.5rem;
   font-size: 1rem;
   padding: 2rem 0;
+  gap: 15rem;
 `;
