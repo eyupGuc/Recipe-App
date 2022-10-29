@@ -1,16 +1,21 @@
 import pizza from "../../assets/u5ac-hero.jpg";
 
-const RecipeCard =()=>{
+const RecipeCard =({recipes})=>{
+    console.log(recipes)
 return(
 
     <div className="card" style={{width: '8rem'}}>
-        <div className="card-body">
-          <h3>Name</h3>
-          <img style={{width:"100px"}} src={pizza} alt="" />
-          <h4> More</h4>
-         
-         
-        </div>
+
+        {recipes.map((item)=>{
+            return <div className="d-flex flex-direction-column">
+            <h3>{item?.recipe?.label}</h3>
+            <img style={{width:"100px"}} src={item?.recipe?.image} alt="" />
+            <h4> More</h4>
+           
+           
+          </div>
+        })}
+        
       </div>
 )
 
