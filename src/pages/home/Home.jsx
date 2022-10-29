@@ -1,13 +1,14 @@
 import Header from "../../components/header/Header";
 import RecipeCard from "./RecipeCard";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
+import { HomeStyle, Input, SearchButton, SelectButton } from "./style";
 
 const Home = () => {
   const [recipes, setRecipes] = useState([]);
   const [meal, setMeal] = useState("");
   const [time, setTime] = useState("Dinner");
-  let getData=false
+
 
   //   const [time, setTime] = useState("time");
   const getRecipes = async () => {
@@ -20,7 +21,7 @@ const Home = () => {
   };
 
   const handleClick = () => {
-    meal && getRecipes();
+    getRecipes();
     
     // console.log(meal);
     // console.log(time);
@@ -28,10 +29,10 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <HomeStyle>
       <Header />
       <div className="d-flex flex-direction-row w-75 mx-auto">
-        <input
+        <Input
           type="text"
           className="w-25"
           value={meal}
@@ -39,10 +40,10 @@ const Home = () => {
           placeholder="meal"
           id="food"
         />
-        <button onClick={handleClick} className="btn btn-success w-25">
+        <SearchButton onClick={handleClick} className="btn btn-success w-25">
           search
-        </button>
-        <select
+        </SearchButton>
+        <SelectButton
           className="form-select w-50"
           aria-label="Default select example"
           id="times"
@@ -54,11 +55,11 @@ const Home = () => {
           <option value="Dinner">Dinner</option>
           <option value="Snack">Snack</option>
           <option value="Teatime">Teatime</option>
-        </select>
+        </SelectButton>
       </div>
 
       <RecipeCard recipes={recipes} />
-    </div>
+    </HomeStyle>
   );
 };
 export default Home;

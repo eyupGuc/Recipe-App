@@ -2,8 +2,8 @@ import Form from "./Form";
 
 const Header = () => {
   return (
-    <div className="bg-warning text-center">
-      <h2 className="bg-success">Food App</h2>
+    <div className="">
+      <h2 >Food App</h2>
       <Form  />
     </div>
   );
