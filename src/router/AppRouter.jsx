@@ -4,7 +4,7 @@ import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import Details from "../pages/details/Details";
 import NavBar from "../components/navbar/Navbar";
-import Header from "../components/header/Header";
+
 
 const AppRouter = () => {
   return (
