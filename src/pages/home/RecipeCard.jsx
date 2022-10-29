@@ -1,13 +1,24 @@
+import { useNavigate } from "react-router-dom";
+
 const RecipeCard = ({ recipes }) => {
+  const navigate = useNavigate();
+
   //   console.log(recipes);
   return (
-    <div>
-      {recipes.map((item) => {
+    <div className=" mt-4  ">
+      {recipes.map((item, index) => {
         return (
-          <div key={item?.recipe?.label} className="col-sm-12 col-md-6 col-lg-4 d-flex flex-direction-row">
-            <h3>{item?.recipe?.label}</h3>
-            <img style={{ width: "100px" }} src={item?.recipe?.image} alt="" />
-            <h4> More</h4>
+          <div key={index} className="">
+            <p>{item?.recipe?.label}</p>
+            <img style={{ width: "300px" }} src={item?.recipe?.image} alt="" />
+            <button
+              onClick={() => {
+              return  navigate("/details"), { state: item };
+              }}
+              className="btn btn-success"
+            >
+              more
+            </button>
           </div>
         );
       })}
