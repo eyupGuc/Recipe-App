@@ -11,3 +11,11 @@ export const NavbarDiv = styled.div`
   padding: 2rem 0;
   gap: 15rem;
 `;
+
+export const Recipe=styled.h1`
+font-size: 3rem;
+color: red;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+`;

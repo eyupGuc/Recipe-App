@@ -1,12 +1,12 @@
 import recipe from "../../assets/recipes.png";
 import { NavLink } from "react-router-dom";
-import { NavbarDiv } from "./NavBar.styled";
+import { NavbarDiv, Recipe } from "./NavBar.styled";
 
 const NavBar = () => {
   return (
     <NavbarDiv>
       <div>
-        <h1><span>RE</span>CIPE</h1>
+        <Recipe>RECIPE</Recipe>
       </div>
       <div>
         <div>
