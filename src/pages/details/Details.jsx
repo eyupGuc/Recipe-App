@@ -1,17 +1,20 @@
-import { Button } from "../home/style";
+import { Button, CardDiv, CardHeader, CardImage } from "../home/style";
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { DetailPage } from "./style";
 
 const Details = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const { state: item } = useLocation();
   console.log(item);
   return (
-    <div>
-      <p>{item.recipe.label}</p>
-      <img src={item.recipe.image} alt="" />
-    <Button onClick={()=>navigate(-1)}>Back</Button>
-    </div>
+    <DetailPage>
+      <CardDiv>
+        <CardHeader>{item.recipe.label}</CardHeader>
+        <CardImage src={item.recipe.image} alt="" />
+        <Button onClick={() => navigate(-1)}>Back</Button>
+      </CardDiv>
+    </DetailPage>
   );
 };
 

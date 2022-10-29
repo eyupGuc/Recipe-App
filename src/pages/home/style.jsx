@@ -13,8 +13,8 @@ export const Button = styled.button`
 `;
 
 export const HomeStyle = styled.div`
-  width: 100%;
-  height: 100%;
+ 
+ max-height: 100%;
   background-color: tomato;
   display: flex;
   flex-direction: column;
