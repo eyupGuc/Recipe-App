@@ -1,10 +1,11 @@
 
 import { NavLink } from "react-router-dom";
-import { Recipe } from "./NavBar.styled";
+import { NavbarDiv, Recipe } from "./NavBar.styled";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light">
+    <NavbarDiv>
+      <nav className="navbar navbar-expand-md navbar-light">
       <div className="container-fluid">
       <Recipe>RECIPE</Recipe>
         <button
@@ -72,6 +73,7 @@ function Nav() {
         </div>
       </div>
     </nav>
+    </NavbarDiv>
   );
 }
 
