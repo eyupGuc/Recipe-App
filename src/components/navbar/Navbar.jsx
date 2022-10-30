@@ -63,7 +63,7 @@ function Nav() {
                   color: isActive && "red",
                  
                 })}
-                to="/" className="nav-link active " aria-current="page"
+                to="/login" className="nav-link active " aria-current="page"
               >
                 LOGOUT
                 {/* Link ile NavLink arasındaki fark NavLink tıklanıldığını biliyor isActive metodu ile */}

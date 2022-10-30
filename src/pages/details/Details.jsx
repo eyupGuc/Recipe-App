@@ -1,10 +1,9 @@
-import { CardHeader, CardImage } from "../home/style";
+import {  CardHeader, CardImage } from "../home/style";
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { CardDetail, DetailPage } from "./style";
 
 const Details = () => {
-  const navigate = useNavigate();
 
   const { state: item } = useLocation();
   console.log(item);
@@ -12,10 +11,9 @@ const Details = () => {
     <DetailPage>
       <CardDetail>
         <CardHeader>{item.recipe.label}</CardHeader>
-
+       
         <CardImage src={item.recipe.image} alt="" />
-        <div>
-          <p>Nutrients</p>
+        <div><p>Nutrients</p>
           <p>
             {item.recipe.totalNutrients.CA.label}:
             {item.recipe.totalNutrients.CA.quantity.toFixed(2)}
@@ -45,8 +43,8 @@ const Details = () => {
             {item.recipe.totalNutrients.PROCNT.label}:
             {item.recipe.totalNutrients.PROCNT.quantity.toFixed(2)}
             {item.recipe.totalNutrients.PROCNT.unit}
-          </p>
-        </div>
+          </p></div>
+       
       </CardDetail>
     </DetailPage>
   );

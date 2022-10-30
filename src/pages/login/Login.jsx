@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
+import { CircleDiv, LoginDiv } from "./style";
 
 const Login = () => {
-  const navigate = useNavigate();
+
 
   return (
-    <div className="container border border-3 mt-5 w-75 bg-info">
-      <h1 className="text-center mt-4">LOGİN</h1>
-      <form onSubmit={() => navigate("/")}>
+    <LoginDiv>
+      <CircleDiv><h1 >LOGİN</h1>
+      <form >
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username
@@ -37,8 +38,9 @@ const Login = () => {
         <div className="text-center">
           <button className="btn btn-success mb-4">Login</button>
         </div>
-      </form>
-    </div>
+      </form></CircleDiv>
+      
+    </LoginDiv>
   );
 };
 
