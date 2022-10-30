@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   background-color: green;
+  margin-bottom: 1rem;
   color: white;
   cursor: pointer;
 margin-top: 0.5rem;
@@ -27,32 +28,36 @@ export const HomeStyle = styled.div`
 
 export const CardDiv = styled.div`
   width: 20rem;
-  height: 20rem;
+  height: 23rem;
   border-radius: 2rem;
-  padding: 1.5rem;
+  
+  
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 1.2rem;
   border: 2px solid black;
   margin-bottom: 2rem;
   background-color: crimson;
   position: relative;
   flex-direction: column;
-  
+  gap: 1rem;
+
 `;
 export const CardImage = styled.img`
   width:200px;
   border-radius: 0.7rem;
+
  
 `;
 
 export const CardHeader=styled.h4`
 text-align: center;
-height: 5rem;
 display: flex;
 align-items: center;
+
+font-size: 1.5rem;
 
 
 

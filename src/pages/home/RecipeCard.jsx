@@ -6,10 +6,10 @@ const RecipeCard = ({ recipes }) => {
 
   //   console.log(recipes);
   return (
-    <div className=" mt-4  ">
+    <div className="row  mt-4 justify-content-center gap-5">
       {recipes.map((item, index) => {
         return (
-          <CardDiv key={index}>
+          <CardDiv key={index} className="">
             <CardHeader>{item?.recipe?.label}</CardHeader>
             <CardImage src={item?.recipe?.image} alt="" />
             <Button

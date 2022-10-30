@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 
 export const DetailPage = styled.div`
- background-color: tomato;
+ background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
 
 `;
 
