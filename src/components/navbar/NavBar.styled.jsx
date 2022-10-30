@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NavbarDiv = styled.div`
  
   background-image:linear-gradient(15deg, #13547a 0%, #80d0c7 100%) ;
+  font-size: 1.5rem;
  
 `;
 
