@@ -45,6 +45,8 @@ export const CardDiv = styled.div`
   gap: 1rem;
 
 `;
+
+
 export const CardImage = styled.img`
   width:200px;
   border-radius: 0.7rem;
@@ -56,6 +58,7 @@ export const CardHeader=styled.h4`
 text-align: center;
 display: flex;
 align-items: center;
+margin-top: 1rem;
 
 font-size: 1.5rem;
 

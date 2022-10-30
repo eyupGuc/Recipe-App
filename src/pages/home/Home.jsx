@@ -37,7 +37,7 @@ const Home = () => {
           className="w-25"
           value={meal}
           onChange={(e) => setMeal(e.target.value)}
-          placeholder="meal"
+          placeholder="food name"
           id="food"
         />
         <SearchButton onClick={handleClick} className="btn btn-success w-25">
