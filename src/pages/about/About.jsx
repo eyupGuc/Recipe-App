@@ -1,9 +1,14 @@
 import React from 'react'
-import { AboutStyle } from './style';
+import { AboutHeader, AboutStyle ,AboutName} from './style';
 
 export const About = () => {
   return (
-    <AboutStyle><h1>About</h1></AboutStyle>
+    
+    <AboutStyle>
+<AboutHeader>Hello! My name is <AboutName>Eyüp</AboutName></AboutHeader>
+
+
+    </AboutStyle>
   )
 }
 
