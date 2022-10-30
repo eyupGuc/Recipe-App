@@ -1,31 +1,53 @@
-import recipe from "../../assets/recipes.png";
-import { NavLink } from "react-router-dom";
-import { NavbarDiv, Recipe } from "./NavBar.styled";
 
-const NavBar = () => {
+import { NavLink } from "react-router-dom";
+import { Recipe } from "./NavBar.styled";
+
+function Nav() {
   return (
-    <NavbarDiv>
-      <div>
-        <Recipe>RECIPE</Recipe>
-      </div>
-      <div>
-        <div>
-          <NavLink to="/" className="nav-link active " aria-current="page">
-            HOME
-          </NavLink>
-        </div>
-        <div>
-          {" "}
-          <NavLink
-            to="/about"
-            className="nav-link active"
-            aria-current="page"
-          >
-            ABOUT
-          </NavLink>
-        </div>
-        <div>
-          <a
+    <nav className="navbar navbar-expand-md navbar-light">
+      <div className="container-fluid">
+      <Recipe>RECIPE</Recipe>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+            <li className="nav-item">
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive && "green",
+                
+                })}
+                to="/"
+                className="nav-link active"
+                aria-current="page"
+              >
+                HOME
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive && "green",
+                 
+                })}
+                to="/about"
+                className="nav-link active"
+                aria-current="page"
+              >
+                ABOUT
+                
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+            <a
             href="https://github.com/eyupGuc"
             className="nav-link active "
             aria-current="page"
@@ -33,14 +55,24 @@ const NavBar = () => {
           >
             GİTHUB
           </a>
-        </div>
-        <div>
-          <NavLink to="/" className="nav-link active " aria-current="page">
-            LOGOUT
-          </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive && "green",
+                 
+                })}
+                to="/" className="nav-link active " aria-current="page"
+              >
+                LOGOUT
+                {/* Link ile NavLink arasındaki fark NavLink tıklanıldığını biliyor isActive metodu ile */}
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
-    </NavbarDiv>
+    </nav>
   );
-};
-export default NavBar;
+}
+
+export default Nav;
