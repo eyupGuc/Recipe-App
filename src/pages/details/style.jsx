@@ -8,6 +8,7 @@ export const DetailPage = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #FFCACA;
 
 `;
 
@@ -15,6 +16,7 @@ export const CardDetail= styled.div`
   width: 40rem;
   height: 20rem;
   border-radius: 2rem;
+  background-color: #FFCACA;
   padding: 1.5rem;
   text-align: center;
   display: flex;

@@ -3,8 +3,8 @@ import { AboutStyle } from './style';
 
 export const About = () => {
   return (
-    <AboutStyle>about</AboutStyle>
+    <AboutStyle><h1>About</h1></AboutStyle>
   )
 }
 
-export default About;
+export default About; 

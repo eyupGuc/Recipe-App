@@ -5,7 +5,7 @@ export const Button = styled.button`
   margin-bottom: 1rem;
   color: white;
   cursor: pointer;
-margin-top: 0.5rem;
+  margin-top: 0.5rem;
   border-radius: 0.5rem;
   border-color: black;
   &:hover {
@@ -14,24 +14,23 @@ margin-top: 0.5rem;
 `;
 
 export const HomeStyle = styled.div`
- 
- height: 100%;
-  background-color: tomato;
-  display:flex;
+  height: 100%;
+  background-color: #FFCACA;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 0.5rem;
   font-size: 1rem;
   padding: 2rem 0;
   flex-wrap: wrap;
+  margin-top: 3rem;
 `;
 
 export const CardDiv = styled.div`
   width: 20rem;
   height: 23rem;
   border-radius: 2rem;
-  
-  
+
   text-align: center;
   display: flex;
   align-items: center;
@@ -43,68 +42,64 @@ export const CardDiv = styled.div`
   position: relative;
   flex-direction: column;
   gap: 1rem;
-
 `;
-
 
 export const CardImage = styled.img`
-  width:200px;
+  width: 200px;
   border-radius: 0.7rem;
-
- 
 `;
 
-export const CardHeader=styled.h4`
-text-align: center;
-display: flex;
-align-items: center;
-margin-top: 1rem;
+export const CardHeader = styled.h4`
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 
-font-size: 1.5rem;
-
-
-
+  font-size: 1.5rem;
 `;
 
-export const Input=styled.input`
-margin: 0.5rem 0 ;
-height: 3rem;
-width: 100%;
-border-radius: 0.7rem;
-border: none;
-font-size: 1.2rem;
-padding-left: 1rem;
-margin-right:1rem;
+export const Input = styled.input`
+  margin: 0.5rem 0;
+  height: 3rem;
+
+  border-radius: 0.7rem;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
 `;
 
-export const SearchButton=styled.button`
-margin: 0.5rem 0 ;
-height: 3rem;
-width: 100%;
-border-radius: 0.7rem;
-border: none;
-font-size: 1.2rem;
-padding-left: 1rem;
+export const SearchButton = styled.button`
+  height: 3rem;
+padding: 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  font-size: 1.2rem;
 
-margin-right: 0.5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  color: white;
+  margin-right: 0.5rem;
 
-background-color: green;
+  background-color: green;
 `;
 
+export const SelectButton = styled.select`
+  margin: 0.5rem 0;
+  height: 3rem;
 
-export const SelectButton=styled.select`
-margin: 0.5rem 0 ;
-height: 3rem;
-width: 100%;
-border-radius: 0.7rem;
-border: none;
-font-size: 1.2rem;
-padding-left: 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 1rem;
 
-background-color: aqua;
-
-
+  background-color: aqua;
 `;
 
-
-
+export const InputSearchSelectDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;

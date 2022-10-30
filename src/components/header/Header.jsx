@@ -1,11 +1,12 @@
 import Form from "./Form";
+import { FoodTextStyled } from "./style";
 
 const Header = () => {
   return (
-    <div className="">
-      <h2 >Food App</h2>
+   
+      <FoodTextStyled  >Food App</FoodTextStyled>
      
-    </div>
+    
   );
 };
 
