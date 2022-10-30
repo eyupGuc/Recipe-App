@@ -26,6 +26,21 @@ export const HomeStyle = styled.div`
   margin-top: 3rem;
 `;
 
+export const HomeEmptyStyle=styled.div`
+
+height: 100vh;
+  background-color: #FFCACA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+
+`;
+
 export const CardDiv = styled.div`
   width: 20rem;
   height: 23rem;
