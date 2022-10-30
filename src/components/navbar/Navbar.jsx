@@ -20,7 +20,7 @@ function Nav() {
             <li className="nav-item">
               <NavLink
                 style={({ isActive }) => ({
-                  color: isActive && "green",
+                  color: isActive && "red",
                 
                 })}
                 to="/"
@@ -34,7 +34,7 @@ function Nav() {
             <li className="nav-item">
               <NavLink
                 style={({ isActive }) => ({
-                  color: isActive && "green",
+                  color: isActive && "red",
                  
                 })}
                 to="/about"
@@ -59,7 +59,7 @@ function Nav() {
             <li className="nav-item">
               <NavLink
                 style={({ isActive }) => ({
-                  color: isActive && "green",
+                  color: isActive && "red",
                  
                 })}
                 to="/" className="nav-link active " aria-current="page"
