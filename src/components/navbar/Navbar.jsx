@@ -57,18 +57,7 @@ function Nav() {
             GİTHUB
           </a>
             </li>
-            <li className="nav-item">
-              <NavLink
-                style={({ isActive }) => ({
-                  color: isActive && "red",
-                 
-                })}
-                to="/login" className="nav-link active " aria-current="page"
-              >
-                LOGOUT
-                {/* Link ile NavLink arasındaki fark NavLink tıklanıldığını biliyor isActive metodu ile */}
-              </NavLink>
-            </li>
+            
           </ul>
         </div>
       </div>

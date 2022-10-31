@@ -6,7 +6,7 @@ import { CardDetail, DetailPage } from "./style";
 const Details = () => {
 
   const { state: item } = useLocation();
-  console.log(item);
+  // console.log(item);
   return (
     <DetailPage>
       <CardDetail>

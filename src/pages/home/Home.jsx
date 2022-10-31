@@ -22,7 +22,7 @@ const Home = () => {
     const api_key = "9253186206ae0d9ef98b6b7f83bb9d31";
     const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${meal}&app_id=${id}&app_key=${api_key}&mealType=${time}`;
     const { data } = await axios(url);
-    console.log(data.hits);
+    // console.log(data.hits);
     setRecipes(data.hits);
   };
 
@@ -34,7 +34,7 @@ const Home = () => {
     setMeal("");
   };
 
-  if (recipes.length == 0) {
+  if (recipes.length === 0) {
     return (
       <HomeEmptyStyle>
         <Header />
