@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutHeader, AboutStyle ,AboutName} from './style';
+import { AboutHeader, AboutStyle ,AboutName} from './About.styled';
 
 export const About = () => {
   return (
