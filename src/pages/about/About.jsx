@@ -5,7 +5,10 @@ export const About = () => {
   return (
     
     <AboutStyle>
-<AboutHeader>Hello! My name is <AboutName>Eyüp</AboutName></AboutHeader>
+
+<div>Eyup Güçyetmez</div>
+
+
 
 
     </AboutStyle>

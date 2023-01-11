@@ -1,13 +1,23 @@
 import styled from "styled-components";
 
 
+
 export const AboutStyle=styled.div`
 height: 100vh;
-background-color: #FFCACA;
+background-image: url("https://www.kampustenevar.com/upload/yazilim_48720.png");
 text-align: center;
+background-repeat: no-repeat;
+background-size:cover;
 display: flex;
+
 align-items: center;
 justify-content: center;
+color: white;
+font-size: 2rem;
+font-family:'Times New Roman', Times, serif;
+font-weight: 900;
+opacity: 0.6;
+
 
 
 `;
